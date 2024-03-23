@@ -67,26 +67,103 @@
                 Velden met een * zijn verplicht</p>
               </article>
               <hr>
-              <form class="row g-3" action="">
-                <fieldset>
-                  <h3 class="text-uppercase fs-2 fw-bolder py-3">Gegevens</h3>
-                <section class="col-md-6">
-                  <label for="voornaam"> Voornaam:</label>
+              <form action="#" method="post">
+                <fieldset class="row mb-3 g-3">
+                  <legend>Gegevens</legend>
+                <section class="col-6">
+                  <label for="voornaam"> Voornaam <span>*</span></label>
                 <input type="text" id="voornaam" name="voornaam">
                 </section> 
-                <section class="col-md-6">
-                  <label for="achternaam">Achternaam: </label>
-                <input type="text" id="achternaam" naam="achternaam">
-                </section> 
-                <section class="col-md-6">
-                <label for="mobiel"> mobiel: </label>
+                <section class="col-6">
+                  <label for="achternaam">Achternaam<span>*</span> </label>
+                  <input type="text" id="achternaam" naam="achternaam">
+                </section>
+                <section class="col-6">
+                  <label for="mobiel"> mobiel: </label>
                 <input type="tel" id="mobiel" naam="mobiel" placeholder="0412 34 56 78" pattern="[0-9]{4}-[0-9]-{2}-[0-9]-{2}-[0-9]-{2}">
                 </section>
-                <section class="col-md-6">
+                <section class="col-6">
                   <label for="geboortedatum">Geboortedatum:</label>
-                <input type="date" id="geboortedatum" name="geboortedatum">
-                </section> 
+                  <input type="date" id="geboortedatum" name="geboortedatum">
+                </section>
+                 
                 </fieldset>
+                <fieldset class="mb-3 g-3">
+                  <legend>accountgegevens</legend>
+                  <section>
+                    <label for="email">e-mail:</label>
+                    <input type="mail" name="email" id="email">
+                  </section>
+                  <section>
+                    <label for="passwd">paswoord:</label>
+                    <input type="password" name="passwd" id="passwd">
+                  </section>
+                  <section>
+                    <label for="passwdc">paswoord bevestigen</label>
+                    <input type="password" name="passwdc" id="passwdc">
+                  </section>
+
+                </fieldset>
+                <fieldset class="mb-3 g-3">
+                  <legend>adresgegevens</legend>
+                  <section>
+                    <label for="adres">Adres:</label>
+                    <input type="text" name="adres" id="adres">
+                  </section>
+                  <section>
+                    <label for="postcode">Postcode:</label>
+                    <input type="text" name="postcode" id="postcode">
+                  </section>
+                  <section>
+                    <label for="Stad">Stad:</label>
+                    <input type="text" name="Stad" id="Stad">
+                  </section>
+                  <section>
+                    <label for="land">Kies een Land:</label>
+                    <input type="radio" id="bel" name="land" value="België">
+                    <label for="bel">België</label>
+                    <input type="radio" name="land" id="dui">
+                    <label for="dui">Duitsland</label>
+                    <input type="radio" name="land" id="fra">
+                    <label for="fra">Frankrijk</label>
+                    <input type="radio" name="land" id="lux">
+                    <label for="lux">Luxemburg</label>
+                    <input type="radio" name="land" id="nl">
+                    <label for="nl">Nederland</label>
+                    <input type="radio" name="land" id="vk">
+                    <label for="vk">Verenigd Koninkrijk</label>
+                  </section>
+                </fieldset>
+                <fieldset class="mb-3 g-3">
+                  <legend>koffie-achtergrond</legend>
+                  <section>
+                    <label for="keuze">Ik koop:</label>
+                    <input type="radio" name="keuze" id="bonen">
+                    <label for="bonen">Koffiebonen</label>
+                    <input type="radio" name="keuze" id="gemalen">
+                    <label for="gemalen">Gemalen koffie</label>
+                    <input type="radio" name="keuze" id="oplos">
+                    <label for="oplos">Oploskoffie</label>
+                  </section>
+                  <section>
+                    <label for="winkels">Ik ben fan van</label>
+                    <input type="radio" name="winkels" id="Illy">
+                    <label for="Illy">Illy</label>
+                    <input type="radio" name="winkels" id="Lava">
+                    <label for="Lava">Lavazza</label>
+                    <input type="radio" name="winkels" id="star">
+                    <label for="star">Starbucks</label>
+                    <input type="radio" name="winkels" id="gran">
+                    <label for="gran">Gran Maestro Italiano</label>
+                    <input type="radio" name="winkels" id="cel">
+                    <label for="cel">Celeste d'Oro</label>
+                  </section>
+                  <section>
+                    <label for="tevreden">Hoe tevreden bent u van ons</label>
+                    <input type="range" name="tevreden" id="tevreden" min="0" max="10">
+                  </section>
+                </fieldset>
+                <input type="submit" name="verzenden" id="verzenden">
               </form>
              
             <hr>
