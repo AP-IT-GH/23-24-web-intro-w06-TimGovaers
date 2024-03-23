@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coffee-shop</title>
+    <title>contact</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
@@ -59,111 +59,118 @@
 
     <div class="container">
         <div class="row">
-          <main class="col-md-9">
-            <section id="shopintro" class="row">
+          <main class="col-md-9 pe-3">
+            <section id="contact" class="row">
               <article class="col-12 m-3">
                 <h2 class="text-uppercase fs-4 fw-bolder py-3">Contact</h2>
                 <p>Vul het registratieformulier in <br>
                 Velden met een * zijn verplicht</p>
               </article>
               <hr>
+
               <form action="#" method="post">
                 <fieldset class="row mb-3 g-3">
-                  <legend class="text-uppercase fs-3 fw-bolder py-3">Gegevens</legend>
-                <section class="col-6">
-                  <label for="voornaam"> Voornaam <span>*</span></label>
-                <input type="text" id="voornaam" name="voornaam">
+                  <legend class="text-uppercase fs-6 fw-bolder pt-3">Gegevens</legend>
+                <section class="col-md-6">
+                  <label for="voornaam"  class="form-label"> Voornaam <span>*</span></label>
+                <input type="text" class="form-control" id="voornaam">
                 </section> 
-                <section class="col-6">
-                  <label for="achternaam">Achternaam<span>*</span> </label>
-                  <input type="text" id="achternaam" naam="achternaam">
+                <section class="col-md-6">
+                  <label for="achternaam"  class="form-label">Achternaam<span>*</span> </label>
+                  <input type="text" class="form-control" id="achternaam" >
                 </section>
                 <section class="col-6">
-                  <label for="mobiel"> mobiel: </label>
-                <input type="tel" id="mobiel" naam="mobiel" placeholder="0412 34 56 78" pattern="[0-9]{4}-[0-9]-{2}-[0-9]-{2}-[0-9]-{2}">
+                  <label for="mobiel"  class="form-label"> mobiel: </label>
+                <input type="tel" class="form-control" id="mobiel"  placeholder="0412 34 56 78" pattern="[0-9]{4}-[0-9]-{2}-[0-9]-{2}-[0-9]-{2}">
                 </section>
                 <section class="col-6">
-                  <label for="geboortedatum">Geboortedatum:</label>
-                  <input type="date" id="geboortedatum" name="geboortedatum">
+                  <label for="geboortedatum"  class="form-label">Geboortedatum:</label>
+                  <input type="date" class="form-control" id="geboortedatum">
                 </section>
                  
                 </fieldset>
-                <fieldset class="row mb-3 g-3">
-                  <legend class="text-uppercase fs-3 fw-bolder py-3">accountgegevens</legend>
+                <fieldset class="row mb-3 g-3 mt-3">
+                  <legend class="text-uppercase fs-6 fw-bolder pt-3">accountgegevens</legend>
                   <section>
-                    <label for="email">e-mail <span>*</span></label>
-                    <input type="mail" name="email" id="email">
+                    <label for="email"  class="form-label">e-mail <span>*</span></label>
+                    <input type="mail" class="form-control" id="email">
                   </section>
-                  <section class="col-6">
-                    <label for="passwd">paswoord<span>*</span></label>
-                    <input type="password" name="passwd" id="passwd">
+                  <section class="col-md-6">
+                    <label for="passwd"  class="form-label">paswoord<span>*</span></label>
+                    <input type="password" class="form-control"  id="passwd">
                   </section>
-                  <section class="col-6">
-                    <label for="passwdc">paswoord bevestigen<span>*</span></label>
-                    <input type="password" name="passwdc" id="passwdc">
+                  <section class="col-md-6">
+                    <label for="passwdc"  class="form-label">paswoord bevestigen<span>*</span></label>
+                    <input type="password" class="form-control"  id="passwdc">
                   </section>
+
                   </fieldset>
-                <fieldset class="row mb-3 g-3">
+
+                <fieldset class="row mb-3 g-3 mt-3">
                   <legend class="text-uppercase fs-3 fw-bolder py-3">adresgegevens</legend>
-                  <section>
-                    <label for="adres">Adres<span>*</span></label>
-                    <input type="text" name="adres" id="adres">
+
+                  <section class="col-12">
+                    <label for="adres"  class="form-label">Adres<span>*</span></label>
+                    <input type="text" class="form-control" id="adres">
                   </section>
-                  <section class="col-4">
-                    <label for="postcode">Postcode<span>*</span></label>
-                    <input type="text" name="postcode" id="postcode">
+
+                  <section class="col-6 col-md-3">
+                    <label for="postcode"  class="form-label">Postcode<span>*</span></label>
+                    <input type="text" class="form-control"  id="postcode">
                   </section>
-                  <section class="col-4">
-                    <label for="Stad">Stad<span>*</span></label>
-                    <input type="text" name="Stad" id="Stad">
+
+                  <section class="col-6 col-md-5">
+                    <label for="Stad"  class="form-label">Stad<span>*</span></label>
+                    <input type="text" class="form-control" id="Stad">
                   </section>
-                  <section class="dropdown col-4">
-                    <label for="land">Kies een Land<span>*</span></label>
-                    <input type="radio" id="bel" name="land" value="België">
-                    <label for="bel">België</label>
-                    <input type="radio" name="land" id="dui">
-                    <label for="dui">Duitsland</label>
-                    <input type="radio" name="land" id="fra">
-                    <label for="fra">Frankrijk</label>
-                    <input type="radio" name="land" id="lux">
-                    <label for="lux">Luxemburg</label>
-                    <input type="radio" name="land" id="nl">
-                    <label for="nl">Nederland</label>
-                    <input type="radio" name="land" id="vk">
-                    <label for="vk">Verenigd Koninkrijk</label>
+
+                  <section class="col-md-4">
+                    <label for="land"  class="form-label">Kies een Land<span>*</span></label>
+                    <select id="land" class="form-control">
+                      <option value="BE">België</option>
+                      <option value="DE">Duitsland</option>
+                      <option value="FR">frankrijk</option>
+                      <option value="LU">Luxemburg</option>
+                      <option value="NL">Nederland</option>
+                      <option value="VK">Verenigd-Koninkrijk</option>
+                    </select>
                   </section>
+
                 </fieldset>
 
-                <fieldset class="row mb-3 g-3">
-                  <legend class="text-uppercase fs-3 fw-bolder py-3">koffie-achtergrond</legend>
-                  <section>
-                    <label for="keuze">Ik koop:</label>
-                    <input type="radio" name="keuze" id="bonen">
-                    <label for="bonen">Koffiebonen</label>
-                    <input type="radio" name="keuze" id="gemalen">
-                    <label for="gemalen">Gemalen koffie</label>
-                    <input type="radio" name="keuze" id="oplos">
-                    <label for="oplos">Oploskoffie</label>
+                <fieldset class="row mb-3 g-3 mt-3">
+                  <legend class="text-uppercase fs-6 fw-bolder pt-3">koffie-achtergrond</legend>
+
+                  <section class="col-6">
+                    <label for="keuze"  class="form-label">Ik koop:</label>
+                    <select id="keuze" class="form-select">
+                      <option value="bonen">Bonen</option>
+                      <option value="gemalen">Gemalen Bonen</option>
+                      <option value="oplos">Oploskoffie</option>
+                    </select>
                   </section>
-                  <section>
-                    <label for="winkels">Ik ben fan van</label>
-                    <input type="radio" name="winkels" id="Illy">
-                    <label for="Illy">Illy</label>
-                    <input type="radio" name="winkels" id="Lava">
-                    <label for="Lava">Lavazza</label>
-                    <input type="radio" name="winkels" id="star">
-                    <label for="star">Starbucks</label>
-                    <input type="radio" name="winkels" id="gran">
-                    <label for="gran">Gran Maestro Italiano</label>
-                    <input type="radio" name="winkels" id="cel">
-                    <label for="cel">Celeste d'Oro</label>
+
+                  <section class="col-6">
+                    <label for="winkels"  class="form-label">Ik ben fan van</label>
+                    <select id="winkels" class="form-select">
+                      <option value="Illy">Illy</option>
+                      <option value="Lavazza">Lavazza</option>
+                      <option value="Starbucks">Starbucks</option>
+                      <option value="GMI">Gran Maestro Italiano</option>
+                      <option value="Celeste d'Oro">Celeste d'Oro</option>
+                    </select>
                   </section>
-                  <section>
-                    <label for="tevreden">Hoe tevreden bent u van ons</label>
-                    <input type="range" name="tevreden" id="tevreden" min="0" max="10">
+
+                  <section class="col">
+                    <label for="tevreden" class="form-label">Hoe tevreden bent u van ons</label>
+                    <input type="range" class="form-range" id="tevreden" min="0" max="10" step="1">
                   </section>
+
                 </fieldset>
-                <input type="submit" name="verzenden" id="verzenden">
+                <section class="col-12">
+                  <input type="submit" class="btn btn-primary" name="verzenden" id="verzenden">
+                </section>
+                
               </form>
              
             <hr>
