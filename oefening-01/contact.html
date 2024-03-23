@@ -69,7 +69,7 @@
               <hr>
               <form action="#" method="post">
                 <fieldset class="row mb-3 g-3">
-                  <legend>Gegevens</legend>
+                  <legend class="text-uppercase fs-3 fw-bolder py-3">Gegevens</legend>
                 <section class="col-6">
                   <label for="voornaam"> Voornaam <span>*</span></label>
                 <input type="text" id="voornaam" name="voornaam">
@@ -88,38 +88,37 @@
                 </section>
                  
                 </fieldset>
-                <fieldset class="mb-3 g-3">
-                  <legend>accountgegevens</legend>
+                <fieldset class="row mb-3 g-3">
+                  <legend class="text-uppercase fs-3 fw-bolder py-3">accountgegevens</legend>
                   <section>
-                    <label for="email">e-mail:</label>
+                    <label for="email">e-mail <span>*</span></label>
                     <input type="mail" name="email" id="email">
                   </section>
-                  <section>
-                    <label for="passwd">paswoord:</label>
+                  <section class="col-6">
+                    <label for="passwd">paswoord<span>*</span></label>
                     <input type="password" name="passwd" id="passwd">
                   </section>
-                  <section>
-                    <label for="passwdc">paswoord bevestigen</label>
+                  <section class="col-6">
+                    <label for="passwdc">paswoord bevestigen<span>*</span></label>
                     <input type="password" name="passwdc" id="passwdc">
                   </section>
-
-                </fieldset>
-                <fieldset class="mb-3 g-3">
-                  <legend>adresgegevens</legend>
+                  </fieldset>
+                <fieldset class="row mb-3 g-3">
+                  <legend class="text-uppercase fs-3 fw-bolder py-3">adresgegevens</legend>
                   <section>
-                    <label for="adres">Adres:</label>
+                    <label for="adres">Adres<span>*</span></label>
                     <input type="text" name="adres" id="adres">
                   </section>
-                  <section>
-                    <label for="postcode">Postcode:</label>
+                  <section class="col-4">
+                    <label for="postcode">Postcode<span>*</span></label>
                     <input type="text" name="postcode" id="postcode">
                   </section>
-                  <section>
-                    <label for="Stad">Stad:</label>
+                  <section class="col-4">
+                    <label for="Stad">Stad<span>*</span></label>
                     <input type="text" name="Stad" id="Stad">
                   </section>
-                  <section>
-                    <label for="land">Kies een Land:</label>
+                  <section class="dropdown col-4">
+                    <label for="land">Kies een Land<span>*</span></label>
                     <input type="radio" id="bel" name="land" value="België">
                     <label for="bel">België</label>
                     <input type="radio" name="land" id="dui">
@@ -134,8 +133,9 @@
                     <label for="vk">Verenigd Koninkrijk</label>
                   </section>
                 </fieldset>
-                <fieldset class="mb-3 g-3">
-                  <legend>koffie-achtergrond</legend>
+
+                <fieldset class="row mb-3 g-3">
+                  <legend class="text-uppercase fs-3 fw-bolder py-3">koffie-achtergrond</legend>
                   <section>
                     <label for="keuze">Ik koop:</label>
                     <input type="radio" name="keuze" id="bonen">
